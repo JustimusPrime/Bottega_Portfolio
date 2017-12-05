@@ -4,6 +4,10 @@ class Blog < ApplicationRecord
   friendly_id :title, use: :slugged
 
   validates_presence_of :title, :body
+
+	belongs_to :topic
+
+
 end
 
 #model passes data to database, and passed data from database for user
