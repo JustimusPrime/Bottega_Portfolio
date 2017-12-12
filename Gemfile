@@ -56,3 +56,4 @@ gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 gem 'justimus_view_tool', git: 'https://github.com/JustimusPrime/justimus_view_tool'
+gem 'petergate', '~> 1.8', '>= 1.8.1'
