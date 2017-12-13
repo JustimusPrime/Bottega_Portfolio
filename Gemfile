@@ -57,3 +57,5 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 gem 'justimus_view_tool', git: 'https://github.com/JustimusPrime/justimus_view_tool'
 gem 'petergate', '~> 1.8', '>= 1.8.1'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+gem 'kaminari'
