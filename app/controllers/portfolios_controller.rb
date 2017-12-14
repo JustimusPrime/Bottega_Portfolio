@@ -37,10 +37,8 @@ def update
     respond_to do |format|
       if @portfolio_item.update(portfolio_params)
         format.html { redirect_to portfolios_path, notice: 'This record was successfully update' }
-        format.json { render :show, status: :ok, location: @portfolio }
       else
         format.html { render :edit }
-        format.json { render json: @portfolio.errors, status: :unprocessable_entity }
       end
     end
   end
