@@ -44,6 +44,10 @@ module ApplicationHelper
         url: portfolios_path,
         title: 'Portflios'
       },
+      {
+        url: tech_news_path,
+        title: 'Steeler News'
+      },
     ]
   end
 
