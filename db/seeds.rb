@@ -55,6 +55,13 @@ puts "3 Topics created"
 
 puts "3 technologies created"
 
+User.create(email: "test@test.com",
+            password: "badass",
+            password_confirmation: "badass",
+            name: "Justimus Prime",
+            roles: "site_admin"
+            )
+
 
 
 
