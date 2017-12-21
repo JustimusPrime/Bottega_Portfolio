@@ -36,6 +36,7 @@ body {
   color: #fff;
   text-align: center;
   text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  font-family: 'Orbitron', sans-serif;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -215,18 +216,32 @@ body {
 }
 
 .tech-news a {
-  color: yellow;
+  color: rgba(255,255,0,0.9);
 }
 
 .tech-news > .card {
   padding: 30px;
-  background-color: rgba(128,128,128, .7);
-
+  background-color: rgba(128,128,128, 0.7);
+  font-family: 'Russo One', sans-serif;
+  text-shadow: 2px 4px 3px rgba(255,255,0,0.5);
+  color: black;
 }
 
+.body-font {
+  font-family: 'Russo One', sans-serif;
+}
 
+#about-card {
+  background-color: rgba(128,128,128, .7);
+}
 
+.about-text {
+  text-align: center;
+}
 
+#google-map {
+  opacity: .7;
+}
 
 
 
