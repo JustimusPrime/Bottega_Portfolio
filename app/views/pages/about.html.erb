@@ -1,13 +1,31 @@
 <div class="card" id="about-card">
   <div class="card-body">
-
     <h1 class="about-text">About Me</h1>
+
     <div class="row  body-font">
       <div class="col-md-5">
     <!--     <img src="https://avatarfiles.alphacoders.com/843/84300.png" alt="Profile Image" width="300">  -->
 
-    <%= image_tag "terminator.png", width: 300, alr: "profile image" %>
+        <%= image_tag "terminator.png", width: 300, alr: "profile image" %>
+
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title%></h4>
+            <div class="progress">
+              <div 
+                class="progress-bar progress-bar-striped bg-warning"
+                role="progressbar"
+                aria-valuenow="<% skill.percent_utilized %>"
+                aria-valuemax="100"
+                style="width: <%= skill.percent_utilized %>%"
+             ></div>
+            </div>
+            </div>           
+          <% end %>
+        </div>
       </div>
+
       <div class="col-md-7 about-text">
         <p>A 38 year-old boy embarks on his coding journey of magnificence. I must stop John Connor from ruining my future.</p>
 
@@ -60,3 +78,6 @@
     </div>
   </div>  
 </div>
+
+
+<!-- warning is the color of yellow, check doc for better colors -->
