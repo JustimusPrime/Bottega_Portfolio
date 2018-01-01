@@ -33,7 +33,7 @@ body {
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #f7f7f7;
+  /*background-color: #f7f7f7;*/
 }
 
 .card {
@@ -42,6 +42,7 @@ body {
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
+  background-color: #fff0c3;
 }
 
 .card > img {
@@ -65,4 +66,60 @@ footer p {
 
 .portfolio-container {
   padding-top: 30px;
+}
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('beer-background-39.jpg') no-repeat;
+  background-size: cover;
+}
+
+.jameson-color-override {
+  background: #004027;
+}
+
+.jameson-color-override .navbar-brand {
+    color: #fff0c3;
+}
+
+.jameson-bar h4 {
+    color: #fff0c3;
+}
+
+#navbar-primary .navbar-nav { 
+  background: #fff0c3;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  > li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    > a {
+      padding-left: 30px;
+      padding-right: 30px;
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
+
+.portfolio-nav .navbar-toggler {
+  background-color: #fff0c3;
+}
+
+.portfolio-btn {
+  margin-left: 30px;
 }

@@ -15,6 +15,13 @@
   </head>
 
   <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div id="background"></div>  
+
+
+
 
    <%= render 'shared/portfolio_nav' %>
    <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
@@ -32,5 +39,9 @@
 
     <%= alerts %>
 
+
+        </div>
+      </div>
+    </div>
   </body>
 </html>

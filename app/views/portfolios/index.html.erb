@@ -1,5 +1,9 @@
 <div class="album text-muted">
-  <%= link_to "Create New Item", new_portfolio_path if logged_in?(:site_admin) %>
+      <% if logged_in?(:site_admin) %>
+      <div>
+        <%= link_to "Create New Item", new_portfolio_path(@portfolio_item), class: 'btn btn-success portfolio-btn' %>
+      </div>
+      <% end %>
   <div class="container">
     <%= source_helper("alert alert-warning") %>
 

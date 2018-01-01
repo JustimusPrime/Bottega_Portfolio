@@ -1,29 +1,20 @@
-<div class="collapse bg-dark" id="navbarHeader">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 py-4">
-        <h4 class="text-white">About</h4>
-        <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-      </div>
-      <div class="col-sm-4 py-4">
-        <h4 class="text-white">Explore</h4>
-          <ul class="list-unstyled">
-            <%= nav_helper 'text-white', 'li' %>
-            <li><%= login_helper 'text-white' %></li>
-          </ul>
-      </div>
+
+<nav id="navbar-primary" class="navbar navbar-expand-lg navbar-light portfolio-nav" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-  </div>
-</div>
-      
-<div class="navbar navbar-dark bg-dark">
-  <div class="container d-flex justify-content-between">
-    <a href="#" class="navbar-brand">Justimus Prime</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
-</div>
-
-
-
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mr-auto">
+        <li class="active"><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#"><img id="logo-navbar-middle" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32877/logo-thing.png" width="200" alt="Logo Thing main logo"></a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
