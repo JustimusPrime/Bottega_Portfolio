@@ -9,12 +9,17 @@
     </div>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <ul class="navbar-nav mr-auto">
-        <li class="active"><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li class="active"><%= link_to "About", about_me_path %></li>
+        <li><%= link_to "Contact", contact_path %></li>
+        <li><%= link_to "Blog", blogs_path %></li>
         <li><a href="#"><img id="logo-navbar-middle" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32877/logo-thing.png" width="200" alt="Logo Thing main logo"></a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li><%= link_to "Portfolio", portfolios_path %></li>
+        <li><%= link_to "Steeler News", tech_news_path %></li>
+        <li><%= login_helper 'nav-link' %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+
+<%= link_to image_tag("https://s3-us-west-2.amazonaws.com/s.cdpn.io/32877/logo-thing.png"), root_path, id: "logo-navbar-middle-B", alt: "Logo Thing main logo" %>

@@ -13,7 +13,8 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+ /* font-family: Georgia, "Times New Roman", Times, serif;*/
+  font-family: "Courier New", Courier, monospace;
   color: #555;
 }
 
@@ -23,8 +24,9 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
   color: #333;
 }
 
@@ -93,7 +95,7 @@ h6, .h6 {
 .blog-title {
   margin-bottom: 0;
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 .blog-description {
   font-size: 1.1rem;
@@ -174,6 +176,10 @@ h6, .h6 {
  * custom styles
  */
 
+ a {
+  color: #004027;
+ }
+
 .social-links li {
   font-size: 2.5em;
 }
@@ -194,8 +200,37 @@ h6, .h6 {
 
 .blog-nav {
   margin-bottom: 30px;
+  background-color:   #004027;
+}
+
+.blog-nav .navbar-brand {
+  color: #fff0c3
+}
+
+.blog-nav-text a {
+  color: #fff0c3;
 }
 
 .blog-sidebar-source {
   margin-top: 20px;
+}
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('archaic-language.jpg') no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.blog-description {
+  color: black;
 }
