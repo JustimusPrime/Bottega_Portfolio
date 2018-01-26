@@ -8,26 +8,11 @@
 
         <%= image_tag "terminator.png", width: 300, alr: "profile image" %>
 
-        <div class="skills">
-          <% @skills.each do |skill| %>
-            <div class="skill">
-              <h4><%= skill.title%></h4>
-            <div class="progress">
-              <div 
-                class="progress-bar progress-bar-striped bg-danger"
-                role="progressbar"
-                aria-valuenow="<% skill.percent_utilized %>"
-                aria-valuemax="100"
-                style="width: <%= skill.percent_utilized %>%"
-             ></div>
-            </div>
-            </div>           
-          <% end %>
-        </div>
+
       </div>
 
       <div class="col-md-7 about-text">
-        <p>A 38 year-old boy embarks on his coding journey of magnificence. I must stop John Connor from ruining my future.</p>
+        <p>I was raised in small-town Iowa, then became an adult in New York City. Whether it was academia, statistical analysis, stand-up comed or programming, I have always been fascinated with creation and perfection; making something then the endless pursuit of perfecting it. </p>
 
         <p>
           <button 
@@ -56,20 +41,23 @@
         <p>
           <div class="collapse" id="jobHistory">
             <div class="card card-block">
-              Job 1
+              Corporate Donation & Statistics Mgr.
             </div>
             <div class="card card-block">
-              Job 2
+              Research Consultant
             </div>
           </div>  
 
           <div class="collapse" id="education">
             <div class="card card-block">
-              School 1
+              Bottega
             </div>
             <div class="card card-block">
-              School 2
+              New York University, M.A.
             </div>
+            <div class="card card-block">
+              University of Iowa, B.A
+            </div>            
           </div>
         </p>
 
