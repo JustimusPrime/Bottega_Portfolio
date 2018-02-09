@@ -23,12 +23,16 @@
       <% if logged_in?(:site_admin) %>
       <div>
         <%= link_to "Edit item", edit_portfolio_path(@portfolio_item), class: 'btn btn-warning' %>
+        <%= link_to "Delete item", @portfolio_item , method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' %>
       </div>
+
       <% end %>
 
 
     </div>
   </div>
 </div>
+
+
 
 
