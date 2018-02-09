@@ -1,9 +1,14 @@
 @import "bootstrap";
 @import "jquery-ui";
 @import "gritter";
+@import "font-awesome";
 
 body {
   min-height: 75rem; /* Can be removed; just added for demo purposes */
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -11,8 +16,8 @@ body {
 }
 
 .jumbotron {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
   margin-bottom: 0;
   background-color: #fff;
 }
@@ -65,7 +70,7 @@ footer p {
 /* Custom styles */
 
 .portfolio-container {
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 #background {
@@ -127,4 +132,28 @@ footer p {
 #logo-navbar-middle-B {
   height: 200px;
   background-color: #004027;
+}
+
+.port-container {
+  background-color:rgba(0,0,0,0.1);
+}
+
+.port-heading {
+  color: white;
+  font-weight: 400;
+}
+
+.port-header-subtitle span {
+  color: white;
+}
+
+.footer-text {
+  color: white;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  span {
+    color:white;
+  }
 }

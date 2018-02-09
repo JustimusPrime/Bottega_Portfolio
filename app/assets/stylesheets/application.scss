@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "gritter";
+@import "font-awesome";
 
 /*
  * Globals
@@ -238,7 +239,9 @@ body {
 
 .about-text {
   text-align: center;
-
+  span {
+    font-size: 3.5em;
+  }
 
 }
 
